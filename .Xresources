@@ -1,0 +1,7 @@
+XTerm*Font: -misc-fixed-bold-r-normal--16------iso8859-15
+XTerm*Background: black
+XTerm*Foreground: gray
+XTerm*Geometry: 80x35
+!XTerm*Loginshell: true
+XTerm*SaveLines: 16384
+XTerm*selectToClipboard: true
