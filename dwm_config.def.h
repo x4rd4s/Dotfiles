@@ -64,6 +64,7 @@ static const char *termcmd[]  = { "st", NULL };
 static const char *webbrowser[]  = { "firefox", NULL };
 //static const char *filebrowser[]  = { "thunar", NULL };
 static const char *filebrowser[]  = { "st", "-e", "ranger", NULL };
+static const char *rssreader[]  = { "st", "-e", "newsboat", NULL };
 static const char *shutcmd[] = { "shutdown", "-h", "now", NULL };
 static const char *latexcmd[]  = { "bash", "/home/mrl/scripts/latex.sh", NULL };
 static const char *upvol[]   = { "/usr/bin/pactl", "set-sink-volume", "@DEFAULT_SINK@", "+5%",     NULL };
@@ -107,7 +108,8 @@ static Key keys[] = {
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 	{ MODKEY,             		XK_u,      spawn,          {.v = webbrowser } },
-	{ MODKEY,             		XK_r,      spawn,          {.v = filebrowser } },
+	{ MODKEY,             		XK_e,      spawn,          {.v = filebrowser } },
+	{ MODKEY,             		XK_r,      spawn,          {.v = rssreader } },
 	{ 0,				XK_F9,	   spawn,          {.v = latexcmd } },
 	{ 0,				XF86XK_AudioMute,	   spawn,          {.v = mutevol } },
 	{ 0,				XF86XK_AudioLowerVolume,   spawn,          {.v = downvol } },
